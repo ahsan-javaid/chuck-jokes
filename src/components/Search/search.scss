@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.search {
+  background-image: url("../../assets/images/bitmap@2x.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 320px;
+  text-align: center;
+  .title {
+    padding-top: 50px;
+    font-size: 48px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $brown;
+  }
+  .sub-heading {
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white;
+  }
+  .search-box {
+    padding-top: 10px;
+    position: relative;
+    display: inline-block;
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 20px;
+    }
+    input {
+      background: transparent;
+      width: 458px;
+      height: 20px;
+      padding: 12px 16px;
+      border-radius: 4px;
+      color: white;
+      outline: none;
+      border: 1px solid $white;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $white;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $white;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: $white;
+    }
+  }
+}

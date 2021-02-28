@@ -1,0 +1,124 @@
+@import "../../styles/variables";
+
+.header {
+  height: 60px;
+  padding: 0 100px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+
+  .logo-section {
+    cursor: pointer;
+    img {
+      margin-top: 10px;
+    }
+  }
+
+  .right-navigations {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-link {
+      font-size: 15px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $white;
+      margin-right: 20px;
+      text-decoration: none;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .dropdown-section {
+      cursor: pointer;
+      background-color: $brown;
+      display: flex;
+      justify-content: start;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+
+      p {
+        color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .dropdown-body {
+        position: absolute;
+        top: 60px;
+        padding: 3px;
+        border-radius: 3px;
+        border: solid 1px #d7d7d7;
+        width: 180px;
+        background-color: $white;
+
+        .dropdown-link {
+          text-decoration: none;
+          display: block;
+          margin: 10px;
+          color: #5e5e5e;
+        }
+
+        .active {
+          color: $brown;
+          font-weight: bold;
+        }
+
+        hr {
+          color: #d1d1d1;
+        }
+      }
+
+      .dropdown-body:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 0px;
+        left: 10px;
+        border-width: 0 6px 6px 6px;
+        border-style: solid;
+        border-color: #fff transparent;
+      }
+
+      .dropdown-body:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 0px;
+        left: 8px;
+        border-width: 0 8px 8px 8px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.1) transparent;
+      }
+    }
+  }
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .header {
+    height: 80px;
+    padding: 0 20px;
+    background-color: $black;
+    display: block;
+  }
+  .right-navigations {
+    display: none !important;
+  }
+  .menu-btn {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+}
