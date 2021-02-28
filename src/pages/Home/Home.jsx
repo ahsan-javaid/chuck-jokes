@@ -21,7 +21,7 @@ const Home = (props) => {
     setLoading(false);
   }
   const onJokeClick = (id) => {
-    props.history.push(`/joke/${id}`);
+    props.history.push(`/chuck-jokes/joke/${id}`);
   }
   const onCategoryClick = (cat) => {
     setJokes([]);

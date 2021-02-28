@@ -13,8 +13,8 @@ export default function Routes() {
     <Router>
       <Switch>
         <Layout>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/joke/:id" component={Joke}/>
+          <Route exact path="/chuck-jokes" component={Home}/>
+          <Route exact path="/chuck-jokes/joke/:id" component={Joke}/>
         </Layout>
       </Switch>
     </Router>

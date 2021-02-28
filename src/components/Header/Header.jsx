@@ -10,7 +10,7 @@ const Header = (props) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <div className='header'>
-      <div className='logo-section' onClick={() => props.history.push('/')}>
+      <div className='logo-section' onClick={() => props.history.push('/chuck-jokes')}>
         <img src={logo} alt="none"/>
       </div>
       <div className='right-navigations'>
